@@ -1,0 +1,36 @@
+.navbar-brand {
+  color: skyblue !important;
+}
+
+.navbar {
+  border-bottom: 1px solid #eee;
+} 
+
+.profile-pic {
+  width: 100% !important;
+}
+
+.navbar-collapse {
+  font-size: 12px;
+}
+
+.content {
+  font-size: 12px;
+}
+
+.table {
+  border: 0px !important;
+}
+
+td.label {
+  font-weight: bold;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
