@@ -1,0 +1,9 @@
+{
+   "dev":{
+       "path":"http://localhost:3004",
+       "clientpath":"http://localhost:3000",
+       "port": 3004
+
+   }
+
+}

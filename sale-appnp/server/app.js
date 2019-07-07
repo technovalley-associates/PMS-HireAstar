@@ -1,10 +1,14 @@
+ServerClass=function(){};
+ServerClass.prototype.startServer = function (){
 let http = require("http");
-var express = require("express");
+let express = require("express");
 let app = express();
 let cors = require('cors');
+let ClassConf = require("./config/config"),objConf=new ClassConf();
+const CONFI = objConf.getConfig("dev");
 const bodyParser = require('body-parser');
-var whitelist = ['http://localhost:3004', 'http://localhost:3000']
-var corsOptions = {
+let whitelist = [CONFI.path, CONFI.clientpath];
+let corsOptions = {
   origin: function (origin, callback) {
      if(origin)
      {
@@ -26,8 +30,8 @@ app.use(bodyParser.urlencoded({
 
 let server =  http.createServer(app);
 let os = require("os");
-server.listen(3004,  function(){
-    console.log(" Express server listening on port " +3004);
+server.listen(CONFI.port,  function(){
+    console.log(" Express server listening on port " +CONFI.port);
     console.log( server.address());
 
     console.log( os.hostname());
@@ -49,3 +53,7 @@ routerNew.post('/post/:id' ,  (req,res)=> {
 });
 
 app.use(routerNew);
+}
+
+var serverObj = new ServerClass();
+serverObj.startServer();

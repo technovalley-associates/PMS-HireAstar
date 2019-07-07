@@ -1,0 +1,59 @@
+{
+    "user":{
+        "username":"", 
+        "password":"",
+        "fname":"",
+        "mname":"",
+        "lname":"",
+        "rl":[],
+        "targetIDs":0,
+        "profilePic":"", 
+        "jobDesignation":"",
+        "dateOfBirth":{},
+        "companyID":{},
+        "status":0,
+        "primryContactNo":"",
+        "secondaryContactNo":"",
+        "ResidenceContactNO":"",
+        "Address": {
+            "houseName":"",
+            "locality":"",
+            "landmark":"",
+            "district":"",
+            "state":"",
+            "country":"",
+            "pin":""
+        },
+        "reportees": [],
+        "manager":"",
+        "department":"",
+        "unit":"",
+        "joiningDate":"",
+        "currentPostingLocation":"",
+        "postingOfficeID" :[],
+        "auditLog":""
+    },
+
+    "company":{
+        "companyID":"",
+        "companyName":"",
+        "shortName":"",
+        "logo":"",
+        "officeAddress": {
+            "name":"",
+            "locality":"",
+            "landmark":"",
+            "district":"",
+            "state":"",
+            "country":"",
+            "pin":""
+        },
+        "subscriptionStartDate":"",
+        "subscriptionExpiry":"",
+        "contactEmailID":"",
+        "primaryContact":"",
+        "secondaryContact":"",
+        "officeLocations": [],
+        "auditLog":""
+    }
+}
